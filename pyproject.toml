@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "herminybd-kernelopt_jd040"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出AI 芯片算子优化工程师·冷启动与模型加载时间上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "herminybd" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://herminybd.github.io"
+Repository = "https://github.com/herminybd/kernelopt_jd040"
+Issues = "https://github.com/herminybd/kernelopt_jd040/issues"
+
+[project.scripts]
+kernelopt_jd040 = "kernelopt_jd040:main"
+
+[tool.setuptools]
+py-modules = ["kernelopt_jd040"]
